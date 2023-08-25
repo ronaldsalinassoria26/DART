@@ -1,25 +1,23 @@
-void main(){
+void main() {
   final mySquare = Square(side: 10);
- mySquare.side = 5; // SI O SI DEBEN SER MAYOR A 0 POR LA CONDICIÓN
+  mySquare.side = 5;
 
-print ('área: ${ mySquare.area}');
-
+  print('área: ${mySquare.area}');
 }
-class Square {
-  double _side; //privado con el '_'
-  Square({required double side})
-  : _side = side;
 
-  double get area{
+class Square {
+  double _side;
+  Square({required double side}) : _side = side;
+
+  double get area {
     return _side * _side;
   }
 
-  set side(double value){
+  set side(double value) {
     print('setting new value $value');
-    if(value < 0) throw 'Value must be >=0' ;
+    if (value < 0) throw 'Value must be >=0';
 
     _side = value;
-
   }
 
   double calculateArea() {
