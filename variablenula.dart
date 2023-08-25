@@ -1,7 +1,7 @@
 void main(List<String> args) {
   //Nullsafety
   String? nombre;
-  nombre = "Juanito";
+  nombre = "ronald";
   print(nombre.toUpperCase());
 
   int? numero;
@@ -10,7 +10,7 @@ void main(List<String> args) {
   print(total);
 
   String? apellido;
-  apellido = "Buleje";
+  apellido = "chueleje";
   String apellido1 = apellido ?? "Sin Apellido";
   print(apellido1);
 }
